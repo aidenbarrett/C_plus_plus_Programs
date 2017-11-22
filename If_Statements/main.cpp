@@ -4,6 +4,9 @@ using namespace std;
 
 int main()
 {
+    int a = 12;
+    int b = 10;
+
     if(1 > 0){  // Relational operator
         cout << "Greater than" << endl;
     }
@@ -26,6 +29,10 @@ int main()
 
     if(10!=8){
         cout << "Not equals" << endl;
+    }
+
+    if(a >= b){
+        cout << "A is greater!" << endl;
     }
 
     return 0;
