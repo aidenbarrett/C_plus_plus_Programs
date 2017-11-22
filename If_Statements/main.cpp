@@ -32,7 +32,11 @@ int main()
     }
 
     if(a >= b){
-        cout << "A is greater!" << endl;
+        cout << "A is greater than or equal to B!" << endl;
+    }
+
+    if(b <= a){
+        cout << "B is less than or equal to A!" << endl;
     }
 
     return 0;
