@@ -4,9 +4,9 @@ using namespace std;
 
 int main()
 {
-    int a;
-    int b;
-    int sum;
+    int a = 0;
+    int b = 0;
+    int sum = 0;
 
     cout << "Enter a number! \n";
     cin >> a;
