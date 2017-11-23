@@ -78,6 +78,7 @@ int main()
     else if(recipient_age >= 12 && recipient_age <= 17){
 
     int years = drink_age - recipient_age; // Age to drink calculation.
+
         cout << "I'll buy you a beer in " << years << " years!\n\n";
     }
     else if(recipient_age >= 18 && recipient_age <= 65){
@@ -94,7 +95,6 @@ int main()
     cout << she << " is some craic!\n\nAll the best,\n" << name;
     }
     cout << "\n\n-------------------------------------------\n";
-
 
     return 0;
 }
