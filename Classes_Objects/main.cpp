@@ -15,7 +15,7 @@ class AidensClass{ // all stuff required for class goes here.
 // if main() will use function, then make class public, else, make class private if not used in main()
 int main()
 {
-    // decalring an object. Objects are how you access stuff from class.
+    // declare an object. Objects are how you access stuff from class.
     // for C++ to know what function you want to use, it needs an object.
     // the object tells it what class you are working with.
 
