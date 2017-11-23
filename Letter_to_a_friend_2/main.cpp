@@ -27,6 +27,8 @@ Read in:
 
 using namespace std;
 
+int drinkAge(int, int); // function prototype
+
 int main()
 {
     string name;
@@ -69,7 +71,7 @@ int main()
     system("clear"); // clear the console screen to improve letter presentation
 
     cout << "-------------------------------------------\n";
-    cout << "\n\nDear " << recipient << ", \n\nThis is " << name << ".";
+    cout << "\n\nDear " << recipient << ", \n\nThis is " << name << ". ";
     cout << "I heard you are " << recipient_age << " now, congratulations.\n";
     cout << "Getting older every day! ";
     if(recipient_age < 12){
@@ -77,9 +79,12 @@ int main()
     }
     else if(recipient_age >= 12 && recipient_age <= 17){
 
-    int years = drink_age - recipient_age; // Age to drink calculation.
+    // tested using a function instead of the following simpler version.
 
-        cout << "I'll buy you a beer in " << years << " years!\n\n";
+    // int years = drink_age - recipient_age; // Age to drink calculation.
+    // cout << "I'll buy you a beer in " << years << " years!\n\n";
+
+    cout << "I'll buy you a beer in " << drinkAge(drink_age, recipient_age) << " years!\n\n";
     }
     else if(recipient_age >= 18 && recipient_age <= 65){
         cout << "I'll buy you a beer soon!\n\n";
@@ -97,4 +102,10 @@ int main()
     cout << "\n\n-------------------------------------------\n";
 
     return 0;
+}
+
+
+int drinkAge(int drink_age, int recipient_age){ // function that returns value for years.
+    int years = drink_age - recipient_age;
+    return years;
 }
