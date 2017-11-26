@@ -21,10 +21,22 @@ int main()
 
     return 0;
 }
--------------------------------------------------------------------- */
+
+
+ ------------------------------------------------------------------------------------
+ SOLUTION: BUILD A PUBLIC FUNCTION INSIDE OF CLASS THAT HAS ACCESS TO THE VARIABLES
+ -----------------------------------------------------------------------------------*/
 
 
 class AidenClass{
+    public:                         // Access Modifer (Public).
+        void setName(string x){     // Setter Function.
+            name = x;
+        }
+        string getName(){       // Getter Function.
+            return name;
+        }
+
     private:             // Access Modifer (Private).
         string name;
 };
@@ -32,9 +44,9 @@ class AidenClass{
 int main()
 {
     AidenClass AidenObject;
-    AidenObject.name = "Hello World!";
-
-    cout << "\n" << AidenObject.name << endl;
+    AidenObject.setName("\nHello World!\n");
+    cout << AidenObject.getName();
+    // cout << AidenObject.name; // will flag an error as name is a private member of AidenClass
 
     return 0;
 }
