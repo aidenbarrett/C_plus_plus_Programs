@@ -1,8 +1,3 @@
-#include <iostream>
-#include <string>
-
-using namespace std;
-
 /* --------------------------------------------------------------------
     EXAMPLE OF BAD DESIGN CHOICE - CLASS VARIABLES SHOULD NOT BE PUBLIC
    --------------------------------------------------------------------
@@ -21,12 +16,14 @@ int main()
 
     return 0;
 }
-
-
  ------------------------------------------------------------------------------------
  SOLUTION: BUILD A PUBLIC FUNCTION INSIDE OF CLASS THAT HAS ACCESS TO THE VARIABLES
  -----------------------------------------------------------------------------------*/
 
+#include <iostream>
+#include <string>
+
+using namespace std;
 
 class AidenClass{
     public:                         // Access Modifer (Public).
