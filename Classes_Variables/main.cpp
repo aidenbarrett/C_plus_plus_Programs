@@ -30,11 +30,11 @@ class AidenClass{
         void setName(string x){     // Setter Function.
             name = x;
         }
-        string getName(){       // Getter Function.
+        string getName(){           // Getter Function.
             return name;
         }
 
-    private:             // Access Modifer (Private).
+    private: // Access Modifer (Private).
         string name;
 };
 
