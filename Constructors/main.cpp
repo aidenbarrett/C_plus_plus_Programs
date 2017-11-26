@@ -21,8 +21,10 @@ class AidenClass{
 int main()
 {
     AidenClass AidenObject("\nHello World!\n"); // Once object is created, it calls the contructor with parameter Hello World!
-
     cout << AidenObject.getName();
+
+    AidenClass AidenObject2("\nGoodbye World!\n"); // You can create mulitple objects from same class, they don't overwrite each other.
+    cout << AidenObject2.getName();
 
     return 0;
 }
