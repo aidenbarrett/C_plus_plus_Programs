@@ -26,24 +26,23 @@ int main()
 using namespace std;
 
 class AidenClass{
-    public:                         // Access Modifer (Public).
-        void setName(string x){     // Setter Function.
-            name = x;
+    public:
+        void setName(string nameSwap){
+            aiden = nameSwap;
         }
-        string getName(){           // Getter Function.
-            return name;
+        string getName(){
+            return aiden;
         }
 
-    private: // Access Modifer (Private).
-        string name;
+    private:
+        string aiden;
 };
 
 int main()
 {
     AidenClass AidenObject;
-    AidenObject.setName("\nHello World!\n");
-    cout << AidenObject.getName();
-    // cout << AidenObject.name; // will flag an error as name is a private member of AidenClass
+    AidenObject.setName("\nHello World! Aiden here.\n");
+    cout << AidenObject.getName() << endl;
 
     return 0;
 }

@@ -9,7 +9,6 @@ class AidenClass{
         }
         void AidenFunction2(){
             cout << "World!" << endl;
-
         }
 };
 
