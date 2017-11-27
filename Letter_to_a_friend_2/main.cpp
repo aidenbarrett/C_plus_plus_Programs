@@ -56,7 +56,6 @@ int main()
         cout << "\n" << recipient_age << " is an unacceptable number.\n\nEnter recipient age again: ";
         cin >> recipient_age;
     }
-
     cout << "\nState a friends name: ";
     cin >> friend_name;
 
@@ -78,14 +77,12 @@ int main()
         cout << "I can't believe you will be " << recipient_age+1 << " next year!\n\n";
     }
     else if(recipient_age >= 12 && recipient_age <= 17){
-
-    // tested using a function instead of the following simpler version.
-
+        cout << "I'll buy you a beer in " << drinkAge(drink_age, recipient_age) << " years!\n\n";
+    }
+    // above section tested using a function instead of the following simpler version.
     // int years = drink_age - recipient_age; // Age to drink calculation.
     // cout << "I'll buy you a beer in " << years << " years!\n\n";
 
-    cout << "I'll buy you a beer in " << drinkAge(drink_age, recipient_age) << " years!\n\n";
-    }
     else if(recipient_age >= 18 && recipient_age <= 65){
         cout << "I'll buy you a beer soon!\n\n";
     }
@@ -103,7 +100,6 @@ int main()
 
     return 0;
 }
-
 
 int drinkAge(int drink_age, int recipient_age){ // function that returns value for years.
     int years = drink_age - recipient_age;
