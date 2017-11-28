@@ -28,8 +28,10 @@ int main()
 
     system("clear");
 
+    cout << "---------------------------\n";
     cout << "Minimum loan amount = 300\n";
-    cout << "Maximum loan amount = 65000\n";
+    cout << "Maximum loan amount = 65000";
+    cout << "\n---------------------------\n";
 
     cout << "\nEnter the amount you wish to borrow: ";
     cin >> loanAmount;
