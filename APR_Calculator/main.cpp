@@ -10,7 +10,6 @@ Program to calculate total cost of personal loan.
 5. Monthly repayment.
 6. Total cost of credit.
 7. Total paid at end of loan.
-
 */
 
 #include<iostream>
@@ -22,7 +21,6 @@ using namespace std;
 int main()
 {
     double apr_rate = 0, loanAmount = 0, payment = 0, amountPaid = 0, monthlyInt = 0;
-
     int numPayments = 0;
 
     system("clear");
@@ -64,17 +62,12 @@ int main()
     cout << "Number of Monthly Payments: " << numPayments << endl;
 
     monthlyInt = pow( 1 + apr_rate/100, 1.0/12 );
-
     cout << "Monthly interest: " << monthlyInt << endl;
 
-    payment = loanAmount * pow( monthlyInt, numPayments ) *
-                           ( monthlyInt - 1 ) /
-                           ( pow( monthlyInt, numPayments ) - 1 );
-
+    payment = loanAmount * pow( monthlyInt, numPayments ) * ( monthlyInt - 1 ) / ( pow( monthlyInt, numPayments ) - 1 );
     cout << "\nMonthly Repayment: " << payment << endl;
 
     amountPaid = payment * numPayments;
-
     cout << "Total Cost of Credit: " << (amountPaid - loanAmount) << endl;
     cout << "Total Paid at End of Loan: " << amountPaid << endl;
     cout << "\n----------------------------------------\n";
