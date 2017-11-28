@@ -1,6 +1,8 @@
 /*
-Program to calculate total cost of personal loan.
-
+----------------------------------------
+Program to calculate total cost of a loan.
+Programmer: Aiden Barrett
+----------------------------------------
 1. Loan amount.
 2. Variable APR amount.
 -  (300-1999 = 8.9%) (2000-9999 = 8.5%)
@@ -10,6 +12,7 @@ Program to calculate total cost of personal loan.
 5. Monthly repayment.
 6. Total cost of credit.
 7. Total paid at end of loan.
+----------------------------------------
 */
 
 #include<iostream>
