@@ -6,13 +6,16 @@ Program to calculate total cost of personal loan.
 -  (300-1999 = 8.9%) (2000-9999 = 8.5%)
 -  (10000-19999 = 7.5%) (20000-65000 = 6.8%)
 3. Repayment Term. 12,24,36,48 months etc.
-4. Monthly repayment amount.
-5. Total cost of credit.
+4. Monthly Interest.
+5. Monthly repayment.
+6. Total cost of credit.
+7. Total paid at end of loan.
 
 */
 
 #include<iostream>
 #include<cmath>
+#include <iomanip> // for setprecision of decimal points
 
 using namespace std;
 
@@ -30,7 +33,7 @@ int main()
     cout << "\nEnter the amount you wish to borrow: ";
     cin >> loanAmount;
 
-    while((loanAmount <= 300) || (loanAmount >= 65000)) {
+    while((loanAmount < 300) || (loanAmount > 65000)) {
     cout << "\nEnter loan amount between 300 and 65000: ";
     cin >> loanAmount;
     }
@@ -51,6 +54,7 @@ int main()
     cin >> numPayments;
 
     system("clear");
+    cout << setprecision(2) << fixed;
 
     cout << "\n----------------------------------------\n";
     cout << "Loan based on Bank of Ireland 2017 rates";
@@ -61,15 +65,18 @@ int main()
 
     monthlyInt = pow( 1 + apr_rate/100, 1.0/12 );
 
+    cout << "Monthly interest: " << monthlyInt << endl;
+
     payment = loanAmount * pow( monthlyInt, numPayments ) *
                            ( monthlyInt - 1 ) /
                            ( pow( monthlyInt, numPayments ) - 1 );
 
-    cout << "\nMonthly Payment: " << payment << endl;
+    cout << "\nMonthly Repayment: " << payment << endl;
 
     amountPaid = payment * numPayments;
-    cout << "Total Loan Repayment: " << amountPaid << endl;
+
     cout << "Total Cost of Credit: " << (amountPaid - loanAmount) << endl;
+    cout << "Total Paid at End of Loan: " << amountPaid << endl;
     cout << "\n----------------------------------------\n";
 
     return 0;
