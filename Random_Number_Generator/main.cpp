@@ -1,12 +1,9 @@
 /*
 c standard library, rand function generates random number.
-
 cout << rand(); // not actually random!
 
 srand(); add value to srand function and generates random number
-
 srand(time(0)); // proper random number generator based on clock, number changes all the time.
-
 */
 
 #include <iostream>
@@ -60,7 +57,6 @@ int main()
     cout << 1+(rand()%12)<< endl;
     }
     cout << "-----------\n";
-
 
     return 0;
 }
