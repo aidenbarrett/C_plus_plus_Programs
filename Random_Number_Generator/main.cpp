@@ -1,4 +1,9 @@
 /*
+----------------------------------------
+Program to calculate winning lotto numbers for Jane.
+Programmer: Aiden Barrett
+----------------------------------------
+/*
 c standard library, rand function generates random number.
 cout << rand(); // not actually random!
 
@@ -15,33 +20,15 @@ using namespace std;
 int main()
 {
     srand(time(0));
+    system("clear");
+    int jane;
 
     cout << "-----------\n";
-    cout << "5 random numbers.\n";
+    cout << "Congratulations Jane,\n\nHappy birthday to you!\n\nHere are your winning Euromillions numbers.";
     cout << "-----------\n";
 
-    // prints out 5 random numbers. Possibly all large numbers.
-    for(int x = 1; x <= 5; x++){
-    cout << rand()<< endl;
-    }
     cout << "-----------\n";
-    cout << "5 random numbers from 0 - 5.\n";
-    cout << "-----------\n";
-
-    // takes 5 random numbers, applies modulus 6 to them, remainder will be 0,1,2,3,4,5.
-    for(int y = 1; y <= 5; y++){
-        cout << rand()%6 << endl;
-    }
-    cout << "-----------\n";
-    cout << "5 random numbers from 1 - 6.\n";
-    cout << "-----------\n";
-
-    // takes 5 random numbers, applies modulus 6 to them, shifts by one, remainder will be 1,2,3,4,5,6.
-    for(int z = 1; z <= 5; z++){
-        cout << 1+(rand()%6) << endl;
-    }
-    cout << "-----------\n";
-    cout << "6 random euromillions numbers 1 - 50.\n";
+    cout << "Euromillions numbers 1 - 50.\n";
     cout << "-----------\n";
 
     // prints out 6 random euromillion numbers, 1 - 50.
@@ -49,7 +36,7 @@ int main()
     cout << 1+(rand()%50)<< endl;
     }
     cout << "-----------\n";
-    cout << "2 random bonus numbers 1 - 12.\n";
+    cout << "Bonus numbers 1 - 12.\n";
     cout << "-----------\n";
 
     // prints out 2 random bonus numbers 1 - 12.
@@ -57,6 +44,14 @@ int main()
     cout << 1+(rand()%12)<< endl;
     }
     cout << "-----------\n";
+
+    cout << "Press enter." << endl;
+    cin >> jane;
+    system("clear");
+    cout << "Iiiiiiiiiii love ya babs. Happy birthday!" << endl;
+
+
+
 
     return 0;
 }

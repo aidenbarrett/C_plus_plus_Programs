@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1424214424 source:f:\college\itb\yr2 semester_2\object-oriented programming\lab_4\lab_4_part1\main.cpp
+	"my.h"
+
+1424214356 f:\college\itb\yr2 semester_2\object-oriented programming\lab_4\lab_4_part1\my.h
+
+1424214476 source:f:\college\itb\yr2 semester_2\object-oriented programming\lab_4\lab_4_part1\my.cpp
+	"my.h"
+	<std_lib_facilities.h>
+
